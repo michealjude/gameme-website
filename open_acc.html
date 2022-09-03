@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title> Create new account</title>
+</head>
+<body>
+	<form action="form.php" method="post">
+		<div class="cont1">
+			<div class="cont2">
+				<div class="page1" style="margin-left: 20px; margin-top: 20px;">
+					<label>First Name</label>
+					<br>
+					<input type="text" name="name" class="inp" placeholder="Enter first name" required>
+					<br><br><br>
+					<label>Surname</label>
+					<br>
+					<input type="text" name="name" class="inp" placeholder="Enter surname" required>
+					<br><br><br>
+					<label>Birthday</label>
+					<br>
+					<input type="date" name="date" class="inp" required>
+					<br><br><br>
+					
+					<fieldset style="height: 70px; width: 220px; border-radius: 15px; border: 1px solid orangered;">
+						<legend>Gender</legend>
+					Male
+					<input type="radio" name="type" value="1" checked>
+					<br>
+					<br />
+					Female
+					<input type="radio" name="type" value="2">
+					<br><br><br>
+
+					</fieldset>					
+				</div>
+			</div>
+			<div class="cont3">
+				<div class="page2" style="margin-left: 20px; margin-top: 20px;">
+				<label>Phone No:</label>
+					<br>
+					<input type="number" name="text" class="inp" placeholder="phone no" required name="number">
+					<br><br><br>
+					<label>Password</label>
+					<br>
+					<input type="Password" name="text" class="inp" placeholder="Enter Password" required name="Password">
+					<br><br><br>
+					<label>Comfirm Password</label>
+					<br>
+					<input type="Password" name="text" class="inp" placeholder="Enter Password" required name="Password">
+					<br><br><br>
+					<button id="btn">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		.cont1{
+	height: 555px;
+	width: 960px;
+	border-radius: 20px;
+	background-color: #d3e2ea;
+	border: 1px solid #d3e2ea;
+	box-shadow: inset -3px -3px 15px #ffffff,
+	            inset 10px 5px 15px rgba(0,0,0,.16);
+	position: fixed;
+	left: 270px;
+	 top: 40px;
+	}
+	.cont2{
+	height: 540px;
+	width: 350px;
+	border-radius: 20px;
+	background-color: #d3e2ea;
+	border: 1px solid #d3e2ea;
+	box-shadow: inset -3px -3px 15px #ffffff,
+	            inset 10px 5px 15px rgba(0,0,0,.16);
+	 position: fixed;
+	 left: 300px;
+	 top: 50px;
+	}
+	.cont3{
+	height: 540px;
+	width: 350px;
+	border-radius: 20px;
+	background-color: #d3e2ea;
+	border: 1px solid #d3e2ea;
+	box-shadow: inset -3px -3px 15px #ffffff,
+	            inset 10px 5px 15px rgba(0,0,0,.16);
+	 position: fixed;
+	 left: 700px;
+	 top: 50px;
+	}
+		.inp{
+		color: orangered;
+		height: 30px;
+		width: 230px;
+		border: 2px solid #d3e2ea;
+		border-radius: 10px;
+		box-shadow: inset -3px -3px 15px #ffffff,
+	            inset 10px 5px 15px rgba(0,0,0,.16);
+	    background-color: transparent;
+	    font-size-adjust: 60px;
+	    outline: none;
+	    font-weight: bold;
+	    font-family: italic;
+	}
+	#btn{
+		height: 30px;
+		width: 200px;
+		border: none;
+		background-color: black;
+		color: orangered;
+		border-radius: 20px;
+		font-size: 18px;
+		font-weight: bold;
+		outline: none;
+		cursor: pointer;
+	}
+	#btn:hover{
+		background-color: orangered;
+		color: #d3e2ea;
+	}
+	label{
+		font-family: sans-serif;
+	}
+	</style>
+</body>
+</html>
